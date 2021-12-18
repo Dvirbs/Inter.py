@@ -49,13 +49,12 @@ def mercury_intense_graph():
     #          marker='o', markerfacecolor='blue', markersize=2)
     plt.plot(theta_centered, abs(average_intensity))
 
-    plt.xlim(0.8, 1.5)
-    plt.ylim(0, 2)
+    plt.xlim(-1.75, 1.75)
+    plt.ylim(0,10)
 
     plt.xlabel('Theta_voltage - axis')
     plt.ylabel('intensity_voltage - axis')
     plt.title('mercury_intense_graph')
-    plt.show()
+    plt.savefig('mercury_intense_graph')
 
 
-# mercury_intense_graph()
